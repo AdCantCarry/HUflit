@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kết quả học tập</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="Image/logoH.png"  alt="Huflit Logo">
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu (Blue Bar) -->
+    <nav class="menu-bar">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Tra cứu TKB</a></li>
+            <li><a href="#">Tra cứu văn bằng</a></li>
+            <li><a href="#">Mẫu đơn sinh viên</a></li>
+            <li><a href="#">Tra cứu tuyển sinh</a></li>
+            <li><a href="#">Helpdesk</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="main-container">
+        <div class="blue-box">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <h3>Chức năng</h3>
+                <ul>
+                    <li><a href="#">Trang cá nhân</a></li>
+                    <li><a href="#">Tình hình học tập</a></li>
+                    <li><a href="#">Kết quả học tập</a></li>
+                    <li><a href="#">Lịch học</a></li>
+                    <li><a href="#">Đăng ký môn học</a></li>
+                    <li><a href="#">Thông tin học bổng</a></li>
+                    <li><a href="#">Hỗ trợ</a></li>
+                    <li><a href="#">Đăng ký tốt nghiệp</a></li>
+                    <li><a href="#">Ngoại trú</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </aside>
+
+            <!-- Right Content (Study Results) -->
+            <main class="content">
+                <!-- Filter Options -->
+                <div class="filter-options">
+                    <label for="program">Chương trình đào tạo:</label>
+                    <select id="program">
+                        <option value="all">Công nghệ phần mềm</option>
+                    </select>
+                    <label for="semester">Học kỳ:</label>
+                    <select id="semester">
+                        <option value="all">Tất cả</option>
+                    </select>
+                    <input type="radio" id="tcbt" name="view" checked>
+                    <label for="tcbt">Xem điểm TCBT</label>
+                    <input type="radio" id="all" name="view">
+                    <label for="all">Xem tất cả</label>
+                </div>
+
+                <!-- Table (Study Results) -->
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Mã học phần</th>
+                            <th>Tên học phần</th>
+                            <th>Tín chỉ</th>
+                            <th>Điểm TB</th>
+                            <th>Điểm chữ</th>
+                            <th>Kết quả</th>
+                            <th>Ghi chú</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>123456</td>
+                            <td>Tiếng Anh A1</td>
+                            <td>3.0</td>
+                            <td>8.5</td>
+                            <td>B+</td>
+                            <td><input type="checkbox" checked disabled></td>
+                            <td>Đạt</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>123457</td>
+                            <td>Lập trình cơ bản</td>
+                            <td>3.0</td>
+                            <td>7.0</td>
+                            <td>C+</td>
+                            <td><input type="checkbox" checked disabled></td>
+                            <td>Trung bình</td>
+                        </tr>
+                        <!-- Add more rows here for additional subjects -->
+                    </tbody>
+                </table>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>© Copyright 2024 huflit.edu.vn. All Rights Reserved</p>
+            <p>Liên hệ: contact@huflit.edu.vn</p>
+        </div>
+    </footer>
+</body>
+</html>
